@@ -19,21 +19,21 @@
               </a>
             </li>
             <li class="hover:underline underline-offset-4 cursor-pointer">
-              <Span>HOME</Span>
+              <Span>Trang chủ</Span>
             </li>
             <li class="hover:underline underline-offset-4 cursor-pointer" id="dropdownRTW-button">
-              <span>READY-TO-WEAR</span>
+              <span>Quần áo</span>
               <div class="[&>a]:block [&>a]:py-2 [&>a]:px-6 absolute border-[1px] w-[196px] h-auto py-6 hidden ml-[-16px] mt-3 hover:[&>a]:text-[#796449] [&>a]:text-sm z-10  bg-[#fffefc]" id="dropdownRTW-menu">
-                <a>Dress</a>
-                <a>Shirt</a>
-                <a>T-shirt</a>
-                <a>Pants</a>
-                <a>Suit</a>
-                <a>Jacket</a>
+                <a>Váy</a>
+                <a>Áo</a>
+                <a>Áo phông ngắn</a>
+                <a>Quần</a>
+                <a>Bộ đồ</a>
+                <a>Áo khoác</a>
               </div>
             </li>
             <li class="hover:underline underline-offset-4 cursor-pointer" id="dropdownJewelry-button">
-              <span>JEWELRY</span>
+              <span>Trang sức</span>
               <div class="[&>a]:block [&>a]:py-2 [&>a]:px-6 absolute border-[1px] w-[196px] h-auto py-6 hidden ml-[-16px] mt-3 hover:[&>a]:text-[#796449] [&>a]:text-sm z-10 bg-[#fffefc]" id="dropdownJewelry-menu">
                 <a>Ring</a>
                 <a>Necklace</a>
@@ -42,7 +42,7 @@
               </div>
             </li>
             <li class="hover:underline underline-offset-4 cursor-pointer" id="dropdownAccessories-button">
-              <span>ACCESSORIES</span>
+              <span>Phụ kiện</span>
               <div class="[&>a]:block [&>a]:py-2 [&>a]:px-6 absolute border-[1px] w-[196px] h-auto py-6 hidden ml-[-16px] mt-3 hover:[&>a]:text-[#796449] [&>a]:text-sm z-10 bg-[#fffefc]" id="dropdownAccessories-menu">
                 <a>Hat</a>
                 <a>Scarf</a>
@@ -57,13 +57,13 @@
             <input type="text" placeholder="Search" class="rounded-full w-72 px-4 pl-8 py-1 focus:outline-none focus:shadow-outline border-2 shadow-md text-[#796449BF] placeholder:text-[#796449BF] border-[#796449BF]">
           </div>
           <div class="flex justify-between items-center space-x-4 ml-8">
-            <a class="w-12 h-12 hover:scale-[1.05] ease-in-out cursor-pointer flex items-center justify-center">
+            <a class="w-12 h-12 hover:scale-[1.05] transition duration-500 ease-in-out cursor-pointer flex items-center justify-center ">
               <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 align-middle" aria-hidden="true" focusable="false" role="presentation" class="icon icon-account" fill="none" viewBox="0 0 18 19">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M6 4.5a3 3 0 116 0 3 3 0 01-6 0zm3-4a4 4 0 100 8 4 4 0 000-8zm5.58 12.15c1.12.82 1.83 2.24 1.91 4.85H1.51c.08-2.6.79-4.03 1.9-4.85C4.66 11.75 6.5 11.5 9 11.5s4.35.26 5.58 1.15zM9 10.5c-2.5 0-4.65.24-6.17 1.35C1.27 12.98.5 14.93.5 18v.5h17V18c0-3.07-.77-5.02-2.33-6.15-1.52-1.1-3.67-1.35-6.17-1.35z" fill="currentColor">
                 </path>
               </svg>
             </a>
-            <a class="w-12 h-12 hover:scale-[1.05] ease-in-out cursor-pointer flex">
+            <a class="w-12 h-12 hover:scale-[1.05] transition duration-500 ease-in-out cursor-pointer flex">
               <svg focusable="false" role="presentation" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="none" class="w-12 h-12 align-middle">
                 <path d="m15.75 11.8h-3.16l-.77 11.6a5 5 0 0 0 4.99 5.34h7.38a5 5 0 0 0 4.99-5.33l-.78-11.61zm0 1h-2.22l-.71 10.67a4 4 0 0 0 3.99 4.27h7.38a4 4 0 0 0 4-4.27l-.72-10.67h-2.22v.63a4.75 4.75 0 1 1 -9.5 0zm8.5 0h-7.5v.63a3.75 3.75 0 1 0 7.5 0z" fill="currentColor" fill-rule="evenodd"></path>
               </svg>
