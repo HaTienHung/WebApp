@@ -4,4 +4,14 @@
 
 * {
     background-color: #fffefc;
+    color: #796449bf;
+}
+
+@layer components {
+    .main-color {
+        @apply text-[#796449BF];
+    }
+    .hover-color {
+        @apply text-[#796449];
+    }
 }

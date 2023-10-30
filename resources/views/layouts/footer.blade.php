@@ -15,7 +15,6 @@
       <li>NGO KHANH HA</li>
     </ul>
   </footer>
-  @yield('content')
 </body>
 
 </html>

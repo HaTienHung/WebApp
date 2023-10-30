@@ -1,0 +1,20 @@
+input[type="radio"] {
+    display: none;
+}
+
+label {
+    position: relative;
+    color: #796449bf;
+    font-family: sans-serif;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid #796449bf;
+    padding: 6px 20px;
+    font-size: 14px;
+}
+
+input[type="radio"]:checked + label {
+    background-color: #796449;
+    color: #fffefc;
+}
