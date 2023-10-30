@@ -5,6 +5,12 @@
 * {
     background-color: #fffefc;
     color: #796449bf;
+    max-width: 1536px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 @layer components {
@@ -13,5 +19,14 @@
     }
     .hover-color {
         @apply text-[#796449];
+    }
+    .border-t {
+        @apply border-t-[0.1rem] border-solid border-[rgba(121,100,73,0.08)];
+    }
+    .border-b {
+        @apply border-b-[0.1rem] border-solid border-[rgba(121,100,73,0.08)];
+    }
+    .border {
+        @apply border-[0.1rem] border-solid border-[rgba(121,100,73,0.08)];
     }
 }

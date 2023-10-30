@@ -11,11 +11,11 @@
   <div>
     @include('layouts.header')
     <main class="min-h-screen px-[50px] py-9">
-      <h1 class="flex justify-start mb-3 text-4xl text-[#796449BF]">Tất cả sản phẩm</h1>
+      <h1 class="flex justify-start mb-3 text-4xl text-[#796449BF]">Bộ sưu tập</h1>
       <div class="flex flex-wrap gap-y-2 gap-x-2 text-[#796449BF]">
         @foreach($products as $product)
         <a class="cursor-pointer h-[410px] w-[329px]" href="{{route('product.show',['processedName'=>$product->processedName])}}">
-          <div class="[&>img]:hover:scale-[1.03]">
+          <div class="[&>img]:hover:scale-[1.03] hover:underline text-sm underline-offset-2">
             @foreach (json_decode($product->productImage) as $key => $image)
             @if($key==0)
             <img class="duration-500 ease-in-out transition" src="{{$image}}" alt="{{$product->name}}" />
