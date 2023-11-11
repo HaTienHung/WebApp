@@ -10,9 +10,9 @@
 <body>
   <footer class="flex items-center justify-center border-t py-6 px-[50px] ">
     <ul class="text-2xl text-[#796449BF]">
-      <li>HA TIEN HUNG</li>
-      <li>NGUYEN NGO DUONG</li>
-      <li>NGO KHANH HA</li>
+      <li>Hà Tiến Hưng 29/09/2002</li>
+      <li>Nguyễn Ngô Dương ??/??/??</li>
+      <li>Ngô Khánh Hạ ??/??/??</li>
     </ul>
   </footer>
 </body>

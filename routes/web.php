@@ -23,9 +23,8 @@ Route::get('/', [ProductController::class, "index"])->name('product.index');
 Route::get('/products', function () {
     return view('productDetail');
 });
-
-// Route::get('/product', [ProductController::class, "index"])->name('product.index');
 Route::get('/product/create', [ProductController::class, "create"])->name('product.create');
-Route::get('products/{processedName}', [ProductController::class, "show"])->name('product.show');
+Route::get('products/{processedName}', [ProductController::class, "showProductDetail"])->name('product.show');
 Route::get('pages/{category}', [ProductController::class, "showProductCategory"])->name('product.showCategory');
+
 Route::post('/product', [ProductController::class, "store"])->name('product.store');

@@ -29,4 +29,7 @@
     .border {
         @apply border-[0.1rem] border-solid border-[rgba(121,100,73,0.08)];
     }
+    .hover-searchProduct {
+        @apply text-[rgba(121,100,73,.04)];
+    }
 }

@@ -8,6 +8,8 @@
   <style>
     input {
       width: 400px;
+      height: 60px;
+      overflow-wrap: break-word;
     }
   </style>
 </head>
@@ -25,6 +27,11 @@
         <li>{{$error}}</li>
         @endforeach
       </ul>
+      @endif
+      @if(session()->has('success'))
+      <div>
+        {{session('success')}}
+      </div>
       @endif
     </div>
     <form method="post" action="{{route('product.store')}}">
@@ -70,7 +77,7 @@
         <tr>
           <th>productImage</th>
           <td>
-            <input type="text" name="productImage" placeholder="productImage">
+            <input class="h-20" type="text" name="productImage" placeholder="productImage">
           </td>
         </tr>
         <tr>
