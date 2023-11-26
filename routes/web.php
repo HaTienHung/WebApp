@@ -44,6 +44,7 @@ Route::delete('/remove-from-cart/{productId}/{productSize}/{productColor}', [Car
 Route::post('/update-quantity/{productId}', [CartController::class, 'updateQuantity'])
     ->name('cart.updateQuantity');
 Route::get('/checkout', [CheckoutController::class, 'index'])->name('checkout.index');
+Route::post('/confirm-order', [CheckoutController::class, 'confirmOrder'])->name('confirm.order');
 
 
 //User account
