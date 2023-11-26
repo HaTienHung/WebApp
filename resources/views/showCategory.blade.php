@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   @vite('resources/css/app.css')
+  <title>{{$category->name}}</title>
 </head>
 
 <body>
@@ -21,9 +22,9 @@
             <img class="duration-500 ease-in-out transition" src="{{$image}}" alt="{{$product->name}}" />
             @endif
             @endforeach
-            <div class="py-[17px]">
-              <span>{{$product->name}}</span>
-              <div class="text-[20px]">{{number_format($product->price, 2, ',', '.')}} VND</div>
+            <div class="py-[17px] text-[#776449]">
+              <span class="text-sm">{{$product->name}}</span>
+              <div class="text-[18px] mt-2">{{number_format($product->price, 2, ',', '.')}} VND</div>
             </div>
           </div>
         </a>

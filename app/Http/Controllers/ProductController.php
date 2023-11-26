@@ -52,7 +52,14 @@ class ProductController extends Controller
     {
         $cleanedCategory = str_replace('-', ' ', $category);
         $category = Category::where('slug', $cleanedCategory)->first();
-        $products = Product::where('category_id', $category->id)->get();
-        return view('showCategory', ['products' => $products]);
+        $products = Product::where('category_id', $category->id)->orderBy('price', 'desc')->get();
+        return view('showCategory', ['products' => $products, 'category' => $category]);
+    }
+
+    public function records(Request $request)
+    {
+        // Lấy dữ liệu từ Database, sắp xếp theo ID hoặc bất kỳ trường nào bạn muốn
+        $products = Product::orderBy('price', 'desc')->paginate(16);
+        return view('productAll', ['products' => $products]);
     }
 }

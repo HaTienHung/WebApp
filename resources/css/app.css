@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 * {
-    background-color: #fffefc;
-    color: #796449bf;
+    /* background-color: #fffefc; */
+    /* color: #796449bf; */
     max-width: 1536px;
     margin: 0;
     padding: 0;

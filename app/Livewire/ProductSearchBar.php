@@ -16,4 +16,8 @@ class ProductSearchBar extends Component
         $this->products = Product::where('name', 'like', '%' . $this->query . '%')->get();
         return view('livewire.product-search-bar');
     }
+    public function showAllResults()
+    {
+        $this->redirect('/search/' . $this->query);
+    }
 }
